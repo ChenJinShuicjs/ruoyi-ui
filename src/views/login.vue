@@ -56,7 +56,7 @@
     </el-form>
     <!--  底部  -->
     <div class="el-login-footer">
-      <span>Copyright © 2018-2025 ruoyi.vip All Rights Reserved.</span>
+      <span>Copyright © 2018-2025</span>
     </div>
   </div>
 </template>
@@ -162,46 +162,73 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("../assets/images/login-background.jpg");
+  background: linear-gradient(135deg, #1E88E5 0%, #64B5F6 45%, #0D47A1 100%);
   background-size: cover;
 }
+
 .title {
   margin: 0px auto 30px auto;
   text-align: center;
-  color: #707070;
+  color: #1565C0; 
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 1px;
 }
 
 .login-form {
-  border-radius: 6px;
-  background: #ffffff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   width: 400px;
-  padding: 25px 25px 5px 25px;
+  padding: 35px 35px 15px 35px;
+  
   .el-input {
     height: 38px;
+    
     input {
       height: 38px;
+      background-color: #f5f7fa;
+      border: 1px solid #dcdfe6;
+      color: #606266;
+      
+      &:focus {
+        border-color: #1976D2;
+      }
     }
   }
+  
   .input-icon {
     height: 39px;
     width: 14px;
     margin-left: 2px;
+    color: #889aa4;
   }
 }
-.login-tip {
-  font-size: 13px;
-  text-align: center;
-  color: #bfbfbf;
+
+.el-button--primary {
+  background-color: #1976D2;
+  border-color: #1976D2;
+  
+  &:hover, &:focus {
+    background-color: #1E88E5;
+    border-color: #1E88E5;
+  }
 }
+
 .login-code {
   width: 33%;
   height: 38px;
   float: right;
+  
   img {
     cursor: pointer;
     vertical-align: middle;
+    border-radius: 4px;
+    height: 38px;
+    width: 100%;
   }
 }
+
 .el-login-footer {
   height: 40px;
   line-height: 40px;
@@ -209,12 +236,7 @@ export default {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: #fff;
-  font-family: Arial;
+  color: white;
   font-size: 12px;
-  letter-spacing: 1px;
-}
-.login-code-img {
-  height: 38px;
 }
 </style>
