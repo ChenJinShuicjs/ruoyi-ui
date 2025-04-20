@@ -33,7 +33,7 @@
         <el-input
           v-model="registerForm.code"
           auto-complete="off"
-          placeholder="验证码"
+          placeholder="输验证码"
           style="width: 63%"
           @keyup.enter.native="handleRegister"
         >
